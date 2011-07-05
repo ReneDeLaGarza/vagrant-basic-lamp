@@ -25,6 +25,7 @@ include_recipe "php::module_memcache"
 include_recipe "php::module_gd"
 include_recipe "php::module_pgsql"
 include_recipe "php::pear"
+include_recipe "php::module_curl"
 
 
 template value_for_platform([ "centos", "redhat", "fedora", "suse" ] => {"default" => "/etc/php.ini"}, "default" => "/etc/php5/apache2/php.ini") do
